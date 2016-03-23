@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>jQuery Background Slider</title>
+
+	<style>
+	.jw-slideshow{        
+		margin: 100 auto;
+	    width: 768;
+	    height: 2000px;
+	    background: #000;
+	    opacity: 0.7;
+	    color: #FFF;
+	    padding: 26px;
+	    font-weight: bold;
+	    font-size: 2em;
+	}
+	.jw-slideshow h1{
+		text-align: center;
+	}
+	.jw-slideshow p{ 
+		padding:100px;
+		background:#CCC;
+		color:#000;
+	}
+	</style>
+</head>
+<body>
+	<div class="jw-slideshow">
+		<h1>Jurnalweb.com</h1>
+		<p>Background Slideshow dengan Jquery</p>
+		<p>Pembuatan Slideshow gambar background dengan bantuan plugin jQuery.</p>
+		<p>Plugin Backstretch akan membuat gambar background memenuhi ukuran lebar layar</p>
+		<p>Baca tutorialnya <a href="http://www.jurnalweb.com/membuat-background-slideshow-dengan-jquery">disini</a></p>
+		<p>Image credit: Picjombo.com</p>
+	</div>
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="jquery.backstretch.min.js"></script>
+	<script type="text/javascript">
+		$.backstretch(
+		[
+			"background1.jpg",
+			"background2.jpg",
+			"background3.jpg"
+		], 
+		{
+			duration: 1200, 
+			fade: 600
+		});
+	</script>
+</body>
+</html>
